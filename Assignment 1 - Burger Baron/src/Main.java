@@ -13,7 +13,7 @@ public class Main {
 
 	public static void main(String[] args) throws FileNotFoundException {
 
-		File order = new File("src/customer.txt");
+		File order = new File("testfile.txt");
 		if (order != null) {
 			FileReader fr = new FileReader(order);
 			BufferedReader br = new BufferedReader(fr);
