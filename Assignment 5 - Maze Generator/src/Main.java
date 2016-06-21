@@ -12,14 +12,13 @@ public class Main {
 	public static void main(String[] args) {
 
 		// Maze dimensions
-		int n = 5;
-		int m = 5;
+		int n = 20;
+		int m = 20;
 		
-		//Maze maze = new Maze(n, m, true);		// Debug
 		Maze maze = new Maze(n, m, true);
 		
 		// Time per draw in ms; slows down solution for better viewing
-		
+		maze.timedelay = 20;
 		maze.display();
 		maze.solve(maze.startx, maze.starty);		
 	}
